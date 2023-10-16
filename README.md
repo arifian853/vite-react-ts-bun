@@ -1,30 +1,32 @@
-# React + TypeScript + Vite + Bun JS w/t WSL2 (Fedora)
+# React + TypeScript + Vite + Bun JS w/ WSL2 (Fedora)
 
-## Documentation soon!
+This documentation is for you that want to use Bun JS environment to develop React + Vite Website. Bun JS environment will use the WSL2 Environtment (I'm using Fedora but you can use Ubuntu or another distro too on your WSL).
 
+## #1 Prepare your WSL2 Environtment
+##### A. Find on the internet for how you can install WSL2 on Windows 10/11
+##### B. You need to install unzip package
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- If you on ```Ubuntu``` you can use : 
+```sudo apt install unzip```
 
-Currently, two official plugins are available:
+- If you on ```Fedora``` you can use : 
+```sudo dnf install unzip```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## #2 Install the Bun environment
+##### A. Use this curl link 
+``` curl -fsSL https://bun.sh/install | bash ```
 
-## Expanding the ESLint configuration
+## #3 Create Vite Project
+##### A. Create Vite project on your directory with : 
+``` bun create vite@latest ```
+Choose : 
+> -> 'your-project-name'
+> ->React
+> ->TypeScript + SWC
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Then :
+```bun install```
+```bun run dev```
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+##### B. You're all set
+Open the web on ```http://localhost:5173``` 
