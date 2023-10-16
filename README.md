@@ -18,15 +18,20 @@ This documentation is for you that want to use Bun JS environment to develop Rea
 
 ## #3 Create Vite Project
 ##### A. Create Vite project on your directory with : 
+
 ``` bun create vite@latest ```
-Choose : 
+
+- Choose : 
+
 > -> 'your-project-name'
+
 > ->React
+
 > ->TypeScript + SWC
 
 Then :
-```bun install```
-```bun run dev```
+- ```bun install```
+- ```bun run dev```
 
 ##### B. You're all set
 Open the web on ```http://localhost:5173``` 
